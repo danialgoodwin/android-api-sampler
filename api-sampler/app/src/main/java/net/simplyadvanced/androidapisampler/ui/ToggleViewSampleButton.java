@@ -47,16 +47,14 @@ public class ToggleViewSampleButton extends LinearLayout {
 
     private void initialize(Context context) {
         setOrientation(VERTICAL);
-        setBackgroundResource(R.drawable.border_background);
-
         mButton = new Button(context);
         addView(mButton);
     }
 
     public void setViewSample(@NonNull ViewSample sample) {
         mViewSample = sample;
-        mButton.setText(mViewSample.getName());
 
+        mButton.setText(mViewSample.getName());
         mButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -64,6 +62,7 @@ public class ToggleViewSampleButton extends LinearLayout {
                     removeView(mViewSample.getView());
                     isShowingViewSample = false;
                 } else {
+                    mViewSample.getView().setBackgroundResource(R.drawable.border_background);
                     addView(mViewSample.getView());
                     isShowingViewSample = true;
                 }
