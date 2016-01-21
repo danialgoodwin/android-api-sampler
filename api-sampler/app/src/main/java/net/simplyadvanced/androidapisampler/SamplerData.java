@@ -8,6 +8,7 @@ import android.support.annotation.NonNull;
 
 import net.simplyadvanced.androidapisampler.viewsample.CalendarViewViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.ImageSwitcherViewSample;
+import net.simplyadvanced.androidapisampler.viewsample.SpinnerViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.TextSwitcherViewSample;
 
 import java.util.ArrayList;
@@ -26,6 +27,7 @@ public class SamplerData {
         mViewSamples.add(new CalendarViewViewSample(context));
         mViewSamples.add(new ImageSwitcherViewSample(context));
         mViewSamples.add(new TextSwitcherViewSample(context));
+        mViewSamples.add(new SpinnerViewSample(context));
         mViewSamples = Collections.unmodifiableList(mViewSamples);
     }
 
