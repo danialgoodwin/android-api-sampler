@@ -48,6 +48,7 @@ public class ToggleViewSampleButton extends LinearLayout {
     private void initialize(Context context) {
         setOrientation(VERTICAL);
         mButton = new Button(context);
+        mButton.setAllCaps(false);
         addView(mButton);
     }
 
