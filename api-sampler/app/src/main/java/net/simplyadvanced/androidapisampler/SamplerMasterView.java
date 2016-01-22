@@ -10,6 +10,7 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.ScrollView;
 
 import net.simplyadvanced.androidapisampler.ui.ToggleViewSampleButton;
 
@@ -18,7 +19,9 @@ import java.util.List;
 /**
  *
  */
-public class SamplerMasterView extends LinearLayout {
+public class SamplerMasterView extends ScrollView {
+
+    private LinearLayout mRootLinearLayout;
 
     public SamplerMasterView(Context context) {
         super(context);
@@ -42,15 +45,18 @@ public class SamplerMasterView extends LinearLayout {
     }
 
     private void initialize(Context context) {
-        setOrientation(VERTICAL);
+        mRootLinearLayout = new LinearLayout(context);
+        mRootLinearLayout.setOrientation(LinearLayout.VERTICAL);
 
         SamplerData samplerData = new SamplerData(context);
         List<ViewSample> viewSamples = samplerData.getViewSamples();
         for (ViewSample sample : viewSamples) {
             ToggleViewSampleButton button = new ToggleViewSampleButton(context);
             button.setViewSample(sample);
-            addView(button);
+            mRootLinearLayout.addView(button);
         }
+
+        addView(mRootLinearLayout);
     }
 
 }

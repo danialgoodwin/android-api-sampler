@@ -39,7 +39,7 @@ public class DatePickerViewSample implements ViewSample {
     @NonNull
     @Override
     public String getDescription() {
-        return "A simple programmatic usage, default implementation is an AlertDialog.";
+        return "A simple programmatic usage, default implementation.";
     }
 
     @NonNull
@@ -70,6 +70,7 @@ public class DatePickerViewSample implements ViewSample {
             }, year, month, day);
 
             Button dpdButton = new Button(mContext);
+            dpdButton.setAllCaps(false);
             dpdButton.setText("Open DatePickerDialog");
             dpdButton.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -80,8 +81,8 @@ public class DatePickerViewSample implements ViewSample {
 
             mRootView = new LinearLayout(mContext);
             mRootView.setOrientation(LinearLayout.VERTICAL);
-            mRootView.addView(dp);
             mRootView.addView(dpdButton);
+            mRootView.addView(dp);
         }
         return mRootView;
     }
