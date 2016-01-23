@@ -12,6 +12,7 @@ import net.simplyadvanced.androidapisampler.viewsample.ImageSwitcherViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.SpinnerViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.TextSwitcherViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.TimePickerViewSample;
+import net.simplyadvanced.androidapisampler.viewsample.ViewFlipperViewSample;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -32,6 +33,7 @@ public class SamplerData {
         mViewSamples.add(new TextSwitcherViewSample(context));
         mViewSamples.add(new TimePickerViewSample(context));
         mViewSamples.add(new SpinnerViewSample(context));
+        mViewSamples.add(new ViewFlipperViewSample(context));
         mViewSamples = Collections.unmodifiableList(mViewSamples);
     }
 
