@@ -11,6 +11,7 @@ import net.simplyadvanced.androidapisampler.viewsample.DatePickerViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.DialerFilterViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.ImageSwitcherViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.KeyboardViewViewSample;
+import net.simplyadvanced.androidapisampler.viewsample.ProgressBarViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.SpinnerViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.TextSwitcherViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.TimePickerViewSample;
@@ -34,6 +35,7 @@ public class SamplerData {
 //        mViewSamples.add(new DialerFilterViewSample(context));
         mViewSamples.add(new ImageSwitcherViewSample(context));
         mViewSamples.add(new KeyboardViewViewSample(context));
+        mViewSamples.add(new ProgressBarViewSample(context));
         mViewSamples.add(new TextSwitcherViewSample(context));
         mViewSamples.add(new TimePickerViewSample(context));
         mViewSamples.add(new SpinnerViewSample(context));
