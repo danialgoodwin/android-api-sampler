@@ -1,5 +1,5 @@
 /**
- * Created by Danial Goodwin on 2016-01-26.
+ * Created by Danial Goodwin on 2016-01-27.
  */
 package net.simplyadvanced.androidapisampler.viewsample;
 
@@ -9,25 +9,26 @@ import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
+import android.widget.RatingBar;
 
 import net.simplyadvanced.androidapisampler.ViewSample;
 
 /**
- * TODO: Provide more ProgressBar samples.
+ * TODO: Provide more RatingBar samples.
  */
-public class ProgressBarViewSample implements ViewSample {
+public class RatingBarViewSample implements ViewSample {
 
     private Context mContext;
     private LinearLayout mRootView;
 
-    public ProgressBarViewSample(@NonNull Context context) {
+    public RatingBarViewSample(@NonNull Context context) {
         mContext = context;
     }
 
     @NonNull
     @Override
     public String getName() {
-        return "ProgressBar";
+        return "RatingBar";
     }
 
     @NonNull
@@ -40,11 +41,11 @@ public class ProgressBarViewSample implements ViewSample {
     @Override
     public View getView() {
         if (mRootView == null) {
-            ProgressBar pb1 = new ProgressBar(mContext);
+            RatingBar rb1 = new RatingBar(mContext);
 
             mRootView = new LinearLayout(mContext);
             mRootView.setOrientation(LinearLayout.VERTICAL);
-            mRootView.addView(pb1);
+            mRootView.addView(rb1);
         }
         return mRootView;
     }
