@@ -16,5 +16,12 @@ Eventually, if there seems to be need, we might just automatically instantiate a
 
 
 
+### Ideas for contributions
+
+- Add additional example for `CheckedTextView` with more style.
+- Other views.
+
+
+
 ## License
 MIT
