@@ -10,6 +10,7 @@ import net.simplyadvanced.androidapisampler.viewsample.AutoCompleteTextViewViewS
 import net.simplyadvanced.androidapisampler.viewsample.CalendarViewViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.CardViewViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.CheckedTextViewViewSample;
+import net.simplyadvanced.androidapisampler.viewsample.ChronometerViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.DatePickerViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.DialerFilterViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.ImageSwitcherViewSample;
@@ -38,6 +39,7 @@ public class SamplerData {
         mViewSamples.add(new CalendarViewViewSample(context));
         mViewSamples.add(new CardViewViewSample(context));
         mViewSamples.add(new CheckedTextViewViewSample(context));
+        mViewSamples.add(new ChronometerViewSample(context));
         mViewSamples.add(new DatePickerViewSample(context));
 //        mViewSamples.add(new DialerFilterViewSample(context));
         mViewSamples.add(new ImageSwitcherViewSample(context));
