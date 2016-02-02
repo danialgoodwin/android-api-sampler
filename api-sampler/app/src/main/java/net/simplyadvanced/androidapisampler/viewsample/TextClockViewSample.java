@@ -3,17 +3,14 @@
  */
 package net.simplyadvanced.androidapisampler.viewsample;
 
-import android.annotation.TargetApi;
 import android.content.Context;
 import android.os.Build;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.view.View;
-import android.widget.Chronometer;
 import android.widget.LinearLayout;
 import android.widget.TextClock;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import net.simplyadvanced.androidapisampler.ViewSample;
 

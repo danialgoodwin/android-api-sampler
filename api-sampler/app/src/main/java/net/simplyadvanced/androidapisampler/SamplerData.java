@@ -13,6 +13,7 @@ import net.simplyadvanced.androidapisampler.viewsample.CheckedTextViewViewSample
 import net.simplyadvanced.androidapisampler.viewsample.ChronometerViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.DatePickerViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.DialerFilterViewSample;
+import net.simplyadvanced.androidapisampler.viewsample.FloatingActionButtonViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.ImageSwitcherViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.KeyboardViewViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.ProgressBarViewSample;
@@ -43,6 +44,7 @@ public class SamplerData {
         mViewSamples.add(new ChronometerViewSample(context));
         mViewSamples.add(new DatePickerViewSample(context));
 //        mViewSamples.add(new DialerFilterViewSample(context));
+        mViewSamples.add(new FloatingActionButtonViewSample(context));
         mViewSamples.add(new ImageSwitcherViewSample(context));
         mViewSamples.add(new KeyboardViewViewSample(context));
         mViewSamples.add(new ProgressBarViewSample(context));
