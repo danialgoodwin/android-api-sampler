@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
+import android.widget.TextView;
 
 import net.simplyadvanced.androidapisampler.ui.ToggleViewSampleButton;
 
@@ -50,6 +51,11 @@ public class SamplerMasterView extends ScrollView {
 
         SamplerData samplerData = new SamplerData(context);
         List<ViewSample> viewSamples = samplerData.getViewSamples();
+
+        TextView tv = new TextView(context);
+        tv.setText("# Sampled Classes: " + viewSamples.size());
+        mRootLinearLayout.addView(tv);
+
         for (ViewSample sample : viewSamples) {
             ToggleViewSampleButton button = new ToggleViewSampleButton(context);
             button.setViewSample(sample);
