@@ -18,6 +18,7 @@ import net.simplyadvanced.androidapisampler.viewsample.ImageSwitcherViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.KeyboardViewViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.NumberPickerViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.ProgressBarViewSample;
+import net.simplyadvanced.androidapisampler.viewsample.QuickContactBadgeViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.RatingBarViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.SpinnerViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.TextClockViewSample;
@@ -50,6 +51,7 @@ public class SamplerData {
         mViewSamples.add(new KeyboardViewViewSample(context));
         mViewSamples.add(new NumberPickerViewSample(context));
         mViewSamples.add(new ProgressBarViewSample(context));
+//        mViewSamples.add(new QuickContactBadgeViewSample(context));
         mViewSamples.add(new RatingBarViewSample(context));
         mViewSamples.add(new TextClockViewSample(context));
         mViewSamples.add(new TextSwitcherViewSample(context));
