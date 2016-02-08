@@ -24,6 +24,7 @@ import net.simplyadvanced.androidapisampler.viewsample.SearchViewViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.SeekBarViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.SpinnerViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.SwitchViewSample;
+import net.simplyadvanced.androidapisampler.viewsample.TabLayoutViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.TextClockViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.TextSwitcherViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.TimePickerViewSample;
@@ -59,6 +60,7 @@ public class SamplerData {
         mViewSamples.add(new SearchViewViewSample(context));
         mViewSamples.add(new SeekBarViewSample(context));
         mViewSamples.add(new SwitchViewSample(context));
+        mViewSamples.add(new TabLayoutViewSample(context));
         mViewSamples.add(new TextClockViewSample(context));
         mViewSamples.add(new TextSwitcherViewSample(context));
         mViewSamples.add(new TimePickerViewSample(context));
