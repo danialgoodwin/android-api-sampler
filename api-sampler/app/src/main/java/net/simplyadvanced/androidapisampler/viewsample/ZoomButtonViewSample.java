@@ -4,7 +4,6 @@
 package net.simplyadvanced.androidapisampler.viewsample;
 
 import android.content.Context;
-import android.os.Build;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.view.KeyEvent;
@@ -25,7 +24,6 @@ public class ZoomButtonViewSample implements ViewSample {
     private LinearLayout mRootView;
 
     private int mCounter = 1;
-    private int mCounter2 = 1;
 
     public ZoomButtonViewSample(Context context) {
         mContext = context;
