@@ -13,7 +13,7 @@ import android.widget.ProgressBar;
 import net.simplyadvanced.androidapisampler.ViewSample;
 
 /**
- * TODO: Provide more ProgressBar samples.
+ *
  */
 public class ProgressBarViewSample implements ViewSample {
 
@@ -40,11 +40,27 @@ public class ProgressBarViewSample implements ViewSample {
     @Override
     public View getView() {
         if (mRootView == null) {
-            ProgressBar pb1 = new ProgressBar(mContext);
+            ProgressBar view = new ProgressBar(mContext, null, android.R.attr.progressBarStyleLarge);
+
+            ProgressBar view4 = new ProgressBar(mContext);
+
+            ProgressBar view5 = new ProgressBar(mContext, null, android.R.attr.progressBarStyleSmall);
+
+            ProgressBar view2 = new ProgressBar(mContext, null, android.R.attr.progressBarStyleHorizontal);
+            view2.setIndeterminate(true);
+
+            ProgressBar view3 = new ProgressBar(mContext, null, android.R.attr.progressBarStyleHorizontal);
+            view3.setMax(100);
+            view3.setProgress(42);
+            view3.setIndeterminate(false);
 
             mRootView = new LinearLayout(mContext);
             mRootView.setOrientation(LinearLayout.VERTICAL);
-            mRootView.addView(pb1);
+            mRootView.addView(view);
+            mRootView.addView(view4);
+            mRootView.addView(view5);
+            mRootView.addView(view2);
+            mRootView.addView(view3);
         }
         return mRootView;
     }
