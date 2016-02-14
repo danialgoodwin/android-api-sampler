@@ -6,6 +6,7 @@ package net.simplyadvanced.androidapisampler;
 import android.content.Context;
 import android.support.annotation.NonNull;
 
+import net.simplyadvanced.androidapisampler.viewsample.AlertDialogViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.AutoCompleteTextViewViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.CalendarViewViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.CardViewViewSample;
@@ -47,6 +48,7 @@ public class SamplerData {
 
     public SamplerData(@NonNull Context context) {
         mViewSamples = new ArrayList<>();
+        mViewSamples.add(new AlertDialogViewSample(context));
         mViewSamples.add(new AutoCompleteTextViewViewSample(context));
         mViewSamples.add(new CalendarViewViewSample(context));
         mViewSamples.add(new CardViewViewSample(context));
