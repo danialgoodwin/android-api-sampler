@@ -60,9 +60,11 @@ public class ToggleViewSampleButton extends LinearLayout {
             @Override
             public void onClick(View v) {
                 if (isShowingViewSample) {
+                    mButton.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
                     removeView(mViewSample.getView());
                     isShowingViewSample = false;
                 } else {
+                    mButton.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
                     mViewSample.getView().setBackgroundResource(R.drawable.border_background);
                     addView(mViewSample.getView());
                     isShowingViewSample = true;
