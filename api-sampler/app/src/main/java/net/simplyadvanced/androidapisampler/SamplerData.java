@@ -21,6 +21,7 @@ import net.simplyadvanced.androidapisampler.viewsample.NumberPickerViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.ProgressBarViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.ProgressDialogViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.QuickContactBadgeViewSample;
+import net.simplyadvanced.androidapisampler.viewsample.RadioGroupViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.RatingBarViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.SearchViewViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.SeekBarViewSample;
@@ -65,6 +66,7 @@ public class SamplerData {
         mViewSamples.add(new ProgressBarViewSample(context));
         mViewSamples.add(new ProgressDialogViewSample(context));
 //        mViewSamples.add(new QuickContactBadgeViewSample(context));
+        mViewSamples.add(new RadioGroupViewSample(context));
         mViewSamples.add(new RatingBarViewSample(context));
         mViewSamples.add(new SearchViewViewSample(context));
         mViewSamples.add(new SeekBarViewSample(context));
