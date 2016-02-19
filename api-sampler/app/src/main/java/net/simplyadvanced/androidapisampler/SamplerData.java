@@ -33,6 +33,7 @@ import net.simplyadvanced.androidapisampler.viewsample.TextSwitcherViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.TimePickerViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.ToggleButtonViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.ToolbarViewSample;
+import net.simplyadvanced.androidapisampler.viewsample.VideoViewViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.ViewFlipperViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.WebViewViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.ZoomButtonViewSample;
@@ -78,6 +79,7 @@ public class SamplerData {
         mViewSamples.add(new ToggleButtonViewSample(context));
         mViewSamples.add(new ToolbarViewSample(context));
         mViewSamples.add(new SpinnerViewSample(context));
+        mViewSamples.add(new VideoViewViewSample(context));
         mViewSamples.add(new ViewFlipperViewSample(context));
         mViewSamples.add(new WebViewViewSample(context));
         mViewSamples.add(new ZoomButtonViewSample(context));
