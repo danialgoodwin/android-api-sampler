@@ -17,7 +17,7 @@ import net.simplyadvanced.androidapisampler.ViewSample;
 import net.simplyadvanced.util.android.LayoutUtils;
 
 /**
- *
+ * TODO: Add sample for media controls too: http://examples.javacodegeeks.com/android/android-videoview-example/
  */
 public class VideoViewViewSample implements ViewSample {
 

@@ -17,6 +17,7 @@ import net.simplyadvanced.androidapisampler.viewsample.DialerFilterViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.FloatingActionButtonViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.ImageSwitcherViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.KeyboardViewViewSample;
+import net.simplyadvanced.androidapisampler.viewsample.MenuViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.NumberPickerViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.ProgressBarViewSample;
 import net.simplyadvanced.androidapisampler.viewsample.ProgressDialogViewSample;
@@ -63,6 +64,7 @@ public class SamplerData {
         mViewSamples.add(new FloatingActionButtonViewSample(context));
         mViewSamples.add(new ImageSwitcherViewSample(context));
         mViewSamples.add(new KeyboardViewViewSample(context));
+        mViewSamples.add(new MenuViewSample(context));
         mViewSamples.add(new NumberPickerViewSample(context));
         mViewSamples.add(new ProgressBarViewSample(context));
         mViewSamples.add(new ProgressDialogViewSample(context));
