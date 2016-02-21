@@ -10,6 +10,7 @@ import android.support.annotation.Nullable;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.MediaController;
 import android.widget.VideoView;
 
 import net.simplyadvanced.androidapisampler.R;
@@ -48,16 +49,21 @@ public class VideoViewViewSample implements ViewSample {
             mRootView.setOrientation(LinearLayout.VERTICAL);
 
             VideoView view = new VideoView(mContext);
-
 //            Uri videoUri = Uri.parse("http://www.sample-videos.com/video/mp4/360/big_buck_bunny_360p_2mb.mp4");
 //            view.setVideoURI(videoUri);
             view.setVideoPath("android.resource://" + mContext.getPackageName() + "/" + R.raw.sample);
-
             view.start();
+
+            VideoView view2 = new VideoView(mContext);
+            view2.setVideoPath("android.resource://" + mContext.getPackageName() + "/" + R.raw.sample);
+            MediaController controller = new MediaController(mContext);
+            controller.setAnchorView(view2);
+            view2.setMediaController(controller);
 
 //            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
             LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LayoutUtils.getPxFromDp(mContext, 300), LayoutUtils.getPxFromDp(mContext, 200));
             mRootView.addView(view, params);
+            mRootView.addView(view2, params);
         }
         return mRootView;
     }
